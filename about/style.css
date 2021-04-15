@@ -1,0 +1,212 @@
+body{
+background-color:#FFCFED;
+cursor: url('img/zoom.png'), auto; 
+text-align:center
+}
+
+
+.line{
+height: 0px;
+margin-left: -1100px;
+border: 8px solid #740390;
+transform: rotate(90deg);
+}
+
+.pink{
+height: 0px;
+margin-top:200px;
+margin-left: -900px;
+border: 6px solid #F569BC;
+}
+
+h1{
+  font-family: Sneakers Pro;
+  font-size: 55px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:white;	
+  position:sticky;
+  border-radius: 20px;
+  -webkit-text-stroke: 2.5px #43BD64;
+   
+  
+	position: -webkit-sticky;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #43BD64, 0 0 20px #43BD64, 0 0 30px #43BD64, 0 0 40px #43BD64, 0 0 50px #43BD64, 0 0 60px #43BD64, 0 0 70px #43BD64;
+  }
+  to {
+    text-shadow: 0 0 20px #43BD64, 0 0 30px #43BD64 0 0 40px #43BD64, 0 0 50px #43BD64, 0 0 60px #43BD64, 0 0 70px #43BD64, 0 0 80px #43BD64;
+  }
+  
+}
+
+/* Links inside the navbar */
+.navbar{  
+  float: left;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: fixed;
+  margin-top: -165pt;
+  cursor: url('img/zoom2.png'), auto; 
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 25px;
+  color: white;
+  font-family:Helvetica italic;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color:#FFCFED;
+}
+
+
+a{
+  font-family: Helvetica italic;
+  border-radius: 18px;
+  border: 6px solid #740390;
+  text-align: center;
+}
+
+button{
+  font-family: Helvetica italic;
+  border: 6px solid #740390;
+  text-align: left;
+
+}
+
+.title button{
+position: absolute;
+height: 125px;
+width: 700px;
+left: 20px;
+border-radius: 40px;
+background-color:#FFCFED;
+border: 8px solid #F569BC;
+transform: rotate(0deg);
+}
+
+/* Studio Button */
+.lab {
+  float: left;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 6px solid #740390;
+  text-align: center;
+  margin-left: 700pt;
+}
+
+/* Dropdown button */
+.lab .labbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover, .lab:hover .labbtn:hover {
+  background-color: #FFCFED;
+  border-radius: 18px;
+  border: 6px solid #43BD64;
+  text-align: center;
+  cursor: url('img/zoom2.png'), auto; 
+}
+
+.title button:hover{
+border-radius: 40px;
+background-color:#FFCFED;
+border: 8px solid #43BD64;
+transform: rotate(0deg);
+cursor: url('img/zoom2.png'), auto; 
+}
+
+
+
+
+
+
+
+
+
+.container{
+	-webkit-animation: fadein 5s; 
+	cursor: url('img/zoom2.png'), auto; 
+
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
